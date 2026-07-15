@@ -54,7 +54,7 @@ export const resumeData = {
       description: 'A complete vacation rental marketplace platform featuring dynamic listings, search filters, and an interactive booking system.', 
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux'], 
       highlights: ['Interactive map search with property location pins.', 'Secure booking management and booking calendar.', 'Comprehensive hosting and user review features.'], 
-      github: 'https://github.com/KuldeepLakhera9', 
+      github: 'https://github.com/KuldeepLakhera9/Wanderlust', 
       live: 'https://airbnb.kuldeeplakhera.me', 
       accent: 'from-rose-100 to-red-50', 
       image: '/airbnb.png',
