@@ -1109,18 +1109,108 @@ h3 {
   color: var(--ink) !important;
 }
 
-footer {
+/* Premium Footer Styling */
+footer.footer {
+  margin-top: 120px;
+  padding: 64px 0 40px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-top {
   display: flex;
   justify-content: space-between;
-  color: var(--muted);
-  font-size: 11.5px;
-  padding: 36px 0;
-  border-top: 1px solid var(--line);
-  margin-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-footer span {
-  display: inline-flex;
+
+.footer-brand {
+  max-width: 380px;
+}
+.footer-brand .wordmark {
+  margin-bottom: 16px;
+}
+.footer-bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.footer-links-group {
+  display: flex;
+  gap: 64px;
+}
+
+.footer-nav, .footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.footer-nav a, .footer-socials a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-nav a:hover, .footer-socials a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-meta .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--line-active);
+}
+
+@media (max-width: 768px) {
+  footer.footer {
+    gap: 36px;
+    padding-top: 48px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-links-group {
+    gap: 48px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }
 
 :focus-visible {

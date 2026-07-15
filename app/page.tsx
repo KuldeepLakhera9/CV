@@ -405,10 +405,39 @@ export default function Home() {
           </Section>
         </div>
 
-        <footer>
-          <span>Designed and developed by {p.name}.</span>
-          <span>Built with Next.js, Tailwind CSS & Framer Motion.</span>
-          <span>Last updated: {d.lastUpdated}</span>
+        <footer className="footer">
+          <div className="footer-top">
+            <div className="footer-brand">
+              <a href="#top" className="wordmark">KL<span>.</span></a>
+              <p className="footer-bio">
+                Computer Engineering student specializing in building high-fidelity MERN applications, self-hosted deployment tools, and real-time backend systems.
+              </p>
+            </div>
+            <div className="footer-links-group">
+              <div className="footer-nav">
+                <p className="footer-label">Navigation</p>
+                <a href="#summary">Profile</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Toolkit</a>
+              </div>
+              <div className="footer-socials">
+                <p className="footer-label">Connect</p>
+                <a href={p.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href={p.github} target="_blank" rel="noreferrer">GitHub</a>
+                <a href={`mailto:${p.email}`}>Email</a>
+                <a href={p.portfolio} target="_blank" rel="noreferrer">Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} {p.name}. All rights reserved.</p>
+            <div className="footer-meta">
+              <span>Next.js · Framer Motion · Vanilla CSS</span>
+              <span className="dot" />
+              <span>Last updated: {d.lastUpdated}</span>
+            </div>
+          </div>
         </footer>
       </div>
 
