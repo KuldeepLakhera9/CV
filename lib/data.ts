@@ -17,6 +17,17 @@ export const resumeData = {
   ],
   projects: [
     { 
+      name: 'Personal Portfolio', 
+      description: 'A modern developer portfolio showcasing projects, skills, experience, and achievements.', 
+      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'GSAP'], 
+      highlights: ['SEO-optimized, fully responsive experience.', 'Dark mode and performance-focused implementation.', 'Custom-domain deployment with purposeful animations.'], 
+      github: 'https://github.com/KuldeepLakhera9/Portfolio', 
+      live: 'https://kuldeeplakhera.me', 
+      accent: 'from-emerald-100 to-cyan-50', 
+      image: '/portfolio.png',
+      longDescription: 'An elite developer portfolio engineered with Next.js App Router and Tailwind CSS for speed, SEO, and visual layout stability. It integrates Framer Motion for scroll-linked progress bars, sticky header transitions, and smooth fade-in animations. Standard layout cards degrade gracefully to print stylesheets for recruiters, and theme toggling is fully synchronized with document cookies to prevent client-side hydration flicker.'
+    },
+    { 
       name: 'Convo — Secure Chat Platform', 
       description: 'A production-ready real-time messaging application with authentication, media sharing, and live communication.', 
       tech: ['Next.js', 'Node.js', 'MongoDB', 'Socket.IO', 'JWT', 'Cloudinary'], 
@@ -50,28 +61,6 @@ export const resumeData = {
       longDescription: 'A high-fidelity clone of the Zerodha Kite trading terminal, built to simulate live stock portfolio management and analysis. It integrates Chart.js for rendering dynamic historical price charts, allowing users to analyze stock movements. The application tracks user holdings, calculates real-time profit and loss metrics, and supports simulated market buy/sell orders. The backend handles secure session authentication and maintains stateful MongoDB database connections for portfolio holdings.'
     },
     { 
-      name: 'Wanderlust — Airbnb Clone', 
-      description: 'A complete vacation rental marketplace platform featuring dynamic listings, search filters, and an interactive booking system.', 
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux'], 
-      highlights: ['Interactive map search with property location pins.', 'Secure booking management and booking calendar.', 'Comprehensive hosting and user review features.'], 
-      github: 'https://github.com/KuldeepLakhera9/Wanderlust', 
-      live: 'https://airbnb.kuldeeplakhera.me', 
-      accent: 'from-rose-100 to-red-50', 
-      image: '/airbnb.png',
-      longDescription: 'Wanderlust is a full-featured vacation rental marketplace and booking application. It provides an interactive property search map utilizing Google Maps APIs, allowing users to discover stays based on geographical coordinates. Users can list properties, manage availability dates through a custom calendar interface, leave descriptive reviews, and upload gallery images. The backend utilizes Express and Mongoose, implementing role-based authorization for hosts and travelers.'
-    },
-    { 
-      name: 'Personal Portfolio', 
-      description: 'A modern developer portfolio showcasing projects, skills, experience, and achievements.', 
-      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'GSAP'], 
-      highlights: ['SEO-optimized, fully responsive experience.', 'Dark mode and performance-focused implementation.', 'Custom-domain deployment with purposeful animations.'], 
-      github: 'https://github.com/KuldeepLakhera9/Portfolio', 
-      live: 'https://kuldeeplakhera.me', 
-      accent: 'from-emerald-100 to-cyan-50', 
-      image: '/portfolio.png',
-      longDescription: 'An elite developer portfolio engineered with Next.js App Router and Tailwind CSS for speed, SEO, and visual layout stability. It integrates Framer Motion for scroll-linked progress bars, sticky header transitions, and smooth fade-in animations. Standard layout cards degrade gracefully to print stylesheets for recruiters, and theme toggling is fully synchronized with document cookies to prevent client-side hydration flicker.'
-    },
-    { 
       name: 'QuizPulse', 
       description: 'A real-time multiplayer quiz platform inspired by Kahoot with live gameplay.', 
       tech: ['React', 'Node.js', 'Express.js', 'Socket.IO', 'MongoDB'], 
@@ -81,6 +70,17 @@ export const resumeData = {
       accent: 'from-teal-100 to-stone-100', 
       image: '/quizpulse.png',
       longDescription: 'QuizPulse is a real-time multiplayer trivia platform inspired by Kahoot. It leverages Socket.io for bidirectional websocket channels, enabling instant room sync, live multiplayer leaderboards, and synced answer timer Countdowns. The server handles room state synchronization and tallies points based on response speed, storing historical quiz statistics in MongoDB.'
+    },
+    { 
+      name: 'Wanderlust — Airbnb Clone', 
+      description: 'A complete vacation rental marketplace platform featuring dynamic listings, search filters, and an interactive booking system.', 
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux'], 
+      highlights: ['Interactive map search with property location pins.', 'Secure booking management and booking calendar.', 'Comprehensive hosting and user review features.'], 
+      github: 'https://github.com/KuldeepLakhera9/Wanderlust', 
+      live: 'https://airbnb.kuldeeplakhera.me', 
+      accent: 'from-rose-100 to-red-50', 
+      image: '/airbnb.png',
+      longDescription: 'Wanderlust is a full-featured vacation rental marketplace and booking application. It provides an interactive property search map utilizing Google Maps APIs, allowing users to discover stays based on geographical coordinates. Users can list properties, manage availability dates through a custom calendar interface, leave descriptive reviews, and upload gallery images. The backend utilizes Express and Mongoose, implementing role-based authorization for hosts and travelers.'
     },
   ],
   skills: {
