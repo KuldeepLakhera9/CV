@@ -7,7 +7,7 @@ export const resumeData = {
     email: 'kuldeeplakhera018@gmail.com',
     phone: '+91 9325299923',
     github: 'https://github.com/KuldeepLakhera9',
-    linkedin: 'https://linkedin.com/in/kuldeep-lakhera',
+    linkedin: 'https://www.linkedin.com/in/kuldeep-lakhera-a78373290/',
     portfolio: 'https://kuldeeplakhera.me',
   },
   summary: 'I am a Computer Engineering undergraduate passionate about building scalable full-stack applications, backend systems, and developer tools. I specialize in JavaScript, Node.js, Express.js, React, Next.js, MongoDB, and modern deployment workflows. Over the past year, I have developed production-ready applications including a secure real-time messaging platform, a self-hosted deployment platform, a trading terminal clone, and cloud-deployed web applications. I enjoy solving backend challenges, designing efficient architectures, and exploring DevOps, cloud technologies, and system design.',
