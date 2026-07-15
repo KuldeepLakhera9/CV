@@ -76,8 +76,8 @@ export const resumeData = {
       description: 'A real-time multiplayer quiz platform inspired by Kahoot with live gameplay.', 
       tech: ['React', 'Node.js', 'Express.js', 'Socket.IO', 'MongoDB'], 
       highlights: ['Multiplayer rooms and live leaderboard.', 'Real-time communication and dynamic quiz management.', 'Responsive interface built for active gameplay.'], 
-      github: 'https://github.com/KuldeepLakhera9', 
-      live: 'https://github.com/KuldeepLakhera9', 
+      github: 'https://github.com/KuldeepLakhera9/QuizPulse', 
+      live: 'https://github.com/KuldeepLakhera9/QuizPulse', 
       accent: 'from-teal-100 to-stone-100', 
       image: '/quizpulse.png',
       longDescription: 'QuizPulse is a real-time multiplayer trivia platform inspired by Kahoot. It leverages Socket.io for bidirectional websocket channels, enabling instant room sync, live multiplayer leaderboards, and synced answer timer Countdowns. The server handles room state synchronization and tallies points based on response speed, storing historical quiz statistics in MongoDB.'
