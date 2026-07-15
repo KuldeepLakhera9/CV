@@ -1,0 +1,95 @@
+export const resumeData = {
+  lastUpdated: 'July 2026',
+  profile: {
+    name: 'Kuldeep Pravin Lakhera',
+    title: 'Full Stack Developer | Backend Engineer | MERN Stack Developer | Computer Engineering Student',
+    location: 'Jalgaon, Maharashtra, India',
+    email: 'kuldeeplakhera018@gmail.com',
+    phone: '+91 9325299923',
+    github: 'https://github.com/KuldeepLakhera9',
+    linkedin: 'https://linkedin.com/in/kuldeep-lakhera',
+    portfolio: 'https://kuldeeplakhera.me',
+  },
+  summary: 'I am a Computer Engineering undergraduate passionate about building scalable full-stack applications, backend systems, and developer tools. I specialize in JavaScript, Node.js, Express.js, React, Next.js, MongoDB, and modern deployment workflows. Over the past year, I have developed production-ready applications including a secure real-time messaging platform, a self-hosted deployment platform, a trading terminal clone, and cloud-deployed web applications. I enjoy solving backend challenges, designing efficient architectures, and exploring DevOps, cloud technologies, and system design.',
+  experience: [
+    { company: 'Nexoraa Tech', role: 'Full Stack Developer Intern', duration: 'June 2026 — Present', tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Git'], responsibilities: ['Develop responsive web applications with modern JavaScript frameworks.', 'Build reusable frontend components and backend REST APIs.', 'Implement authentication, database integration, and API development.', 'Collaborate with mentors and developers through Git workflows, code reviews, and feature delivery.'], achievements: ['Completed intensive full-stack developer training.', 'Contributed to multiple real-world development tasks.', 'Improved development workflow using Git and collaborative practices.'] },
+    { company: 'Insite Arc', role: 'Full Stack Developer Intern', duration: 'May 2026 — September 2026', tech: ['Node.js', 'Express.js', 'MongoDB', 'React', 'JavaScript', 'REST APIs'], responsibilities: ['Built scalable web applications for client requirements.', 'Developed backend APIs and integrated MongoDB databases.', 'Worked on authentication systems and dashboard features.', 'Assisted with deployment and application optimization.'], achievements: ['Delivered multiple client-focused features.', 'Gained hands-on experience with production development practices.', 'Improved application performance and maintainability.'] },
+  ],
+  projects: [
+    { 
+      name: 'Convo — Secure Chat Platform', 
+      description: 'A production-ready real-time messaging application with authentication, media sharing, and live communication.', 
+      tech: ['Next.js', 'Node.js', 'MongoDB', 'Socket.IO', 'JWT', 'Cloudinary'], 
+      highlights: ['Real-time messaging with online and offline user status.', 'JWT authentication and image sharing.', 'Responsive UI with cloud deployment and custom-domain hosting.'], 
+      github: 'https://github.com/KuldeepLakhera9/Convo', 
+      live: 'https://convo.kuldeeplakhera.me', 
+      accent: 'from-emerald-100 to-teal-50', 
+      image: '/convo.png',
+      longDescription: 'Convo is a real-time messaging application designed with security and user experience in mind. It uses Socket.io to establish persistent WebSocket connections for instant message delivery, online presence tracking, and typing indicators. The backend is built with Node.js and Express, utilizing JSON Web Tokens (JWT) for secure authentication and MongoDB as the database store. Media sharing is powered by Cloudinary, allowing users to send images and files in real-time.'
+    },
+    { 
+      name: 'Portway', 
+      description: 'A self-hosted Vercel-like platform that automates static website deployments.', 
+      tech: ['Node.js', 'Docker', 'Express.js', 'AWS S3', 'Cloudflare', 'Linux'], 
+      highlights: ['Docker build worker and automated deployment pipeline.', 'Custom subdomain support and static hosting.', 'Architecture designed for scalable deployments.'], 
+      github: 'https://github.com/KuldeepLakhera9/portway', 
+      live: 'https://github.com/KuldeepLakhera9/portway', 
+      accent: 'from-cyan-100 to-emerald-50', 
+      image: '/portway.png',
+      longDescription: 'Portway is a self-hosted cloud platform that automates static website deployments from Git repositories, similar to Vercel. It features a distributed build worker running inside isolated Docker containers, which pulls the project repository, builds it using appropriate node engines, and uploads the built assets to AWS S3 storage. A reverse proxy configuration utilizing Cloudflare and custom DNS resolution routes incoming user subdomains to their respective S3 folders, enabling instant preview deployments.'
+    },
+    { 
+      name: 'Zerodha (Kite) Trading Terminal Clone', 
+      description: 'A feature-rich trading dashboard inspired by Zerodha, with portfolio management and analytics.', 
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Chart.js'], 
+      highlights: ['User authentication and portfolio dashboard.', 'Holdings management, watchlist, and interactive charts.', 'Responsive interface for a complete trading workflow.'], 
+      github: 'https://github.com/KuldeepLakhera9', 
+      live: 'https://zerodha.kuldeeplakhera.me', 
+      accent: 'from-stone-200 to-emerald-50', 
+      image: '/zerodha.png',
+      longDescription: 'A high-fidelity clone of the Zerodha Kite trading terminal, built to simulate live stock portfolio management and analysis. It integrates Chart.js for rendering dynamic historical price charts, allowing users to analyze stock movements. The application tracks user holdings, calculates real-time profit and loss metrics, and supports simulated market buy/sell orders. The backend handles secure session authentication and maintains stateful MongoDB database connections for portfolio holdings.'
+    },
+    { 
+      name: 'Wanderlust — Airbnb Clone', 
+      description: 'A complete vacation rental marketplace platform featuring dynamic listings, search filters, and an interactive booking system.', 
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Redux'], 
+      highlights: ['Interactive map search with property location pins.', 'Secure booking management and booking calendar.', 'Comprehensive hosting and user review features.'], 
+      github: 'https://github.com/KuldeepLakhera9', 
+      live: 'https://airbnb.kuldeeplakhera.me', 
+      accent: 'from-rose-100 to-red-50', 
+      image: '/airbnb.png',
+      longDescription: 'Wanderlust is a full-featured vacation rental marketplace and booking application. It provides an interactive property search map utilizing Google Maps APIs, allowing users to discover stays based on geographical coordinates. Users can list properties, manage availability dates through a custom calendar interface, leave descriptive reviews, and upload gallery images. The backend utilizes Express and Mongoose, implementing role-based authorization for hosts and travelers.'
+    },
+    { 
+      name: 'Personal Portfolio', 
+      description: 'A modern developer portfolio showcasing projects, skills, experience, and achievements.', 
+      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'GSAP'], 
+      highlights: ['SEO-optimized, fully responsive experience.', 'Dark mode and performance-focused implementation.', 'Custom-domain deployment with purposeful animations.'], 
+      github: 'https://github.com/KuldeepLakhera9/Portfolio', 
+      live: 'https://kuldeeplakhera.me', 
+      accent: 'from-emerald-100 to-cyan-50', 
+      image: '/portfolio.png',
+      longDescription: 'An elite developer portfolio engineered with Next.js App Router and Tailwind CSS for speed, SEO, and visual layout stability. It integrates Framer Motion for scroll-linked progress bars, sticky header transitions, and smooth fade-in animations. Standard layout cards degrade gracefully to print stylesheets for recruiters, and theme toggling is fully synchronized with document cookies to prevent client-side hydration flicker.'
+    },
+    { 
+      name: 'QuizPulse', 
+      description: 'A real-time multiplayer quiz platform inspired by Kahoot with live gameplay.', 
+      tech: ['React', 'Node.js', 'Express.js', 'Socket.IO', 'MongoDB'], 
+      highlights: ['Multiplayer rooms and live leaderboard.', 'Real-time communication and dynamic quiz management.', 'Responsive interface built for active gameplay.'], 
+      github: 'https://github.com/KuldeepLakhera9', 
+      live: 'https://github.com/KuldeepLakhera9', 
+      accent: 'from-teal-100 to-stone-100', 
+      image: '/quizpulse.png',
+      longDescription: 'QuizPulse is a real-time multiplayer trivia platform inspired by Kahoot. It leverages Socket.io for bidirectional websocket channels, enabling instant room sync, live multiplayer leaderboards, and synced answer timer Countdowns. The server handles room state synchronization and tallies points based on response speed, storing historical quiz statistics in MongoDB.'
+    },
+  ],
+  skills: {
+    Programming: ['JavaScript (ES6+)', 'Java', 'Python', 'C++', 'SQL'], Frontend: ['React.js', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Framer Motion', 'GSAP'], Backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Socket.IO'], Database: ['MongoDB', 'Mongoose', 'MySQL'], DevOps: ['Docker', 'GitHub Actions (Learning)', 'Linux', 'Nginx (Learning)'], Cloud: ['Vercel', 'Railway', 'Render', 'Cloudflare', 'AWS (Learning)'], Tools: ['Git', 'GitHub', 'VS Code', 'Postman', 'Thunder Client', 'MongoDB Compass', 'Figma'],
+  },
+  education: { college: 'Vidya Pratishthan Kamalnayan Bajaj Institute of Engineering and Technology (VPKBIET), Baramati', degree: 'Bachelor of Technology (B.Tech) — Computer Engineering', cgpa: 'CGPA: 9.1 / 10', graduation: '2023 — 2027', coursework: ['Data Structures', 'Algorithms', 'Databases', 'Backend Development'] },
+  certifications: ['NPTEL — Artificial Intelligence', 'NPTEL — Business Intelligence', 'NPTEL — Python for Data Science', 'Simplilearn — Power BI', 'Drone/UAS Bootcamp — C-DAC Pune'],
+  achievements: ['Built 15+ production-ready full-stack web applications', 'Deployed multiple applications on custom domains', 'Completed two Full Stack Development internships', 'Maintained a 9.1 CGPA throughout engineering', 'Built a self-hosted deployment platform inspired by Vercel', 'Developed a real-time secure chat application using WebSockets'],
+  timeline: [{ year: '2024', text: 'Started programming and strengthened core computer-science foundations' }, { year: '2025', text: 'Learned Java and built full-stack MERN applications' }, { year: '2026', text: 'Shipped cloud-deployed projects and deepened backend, Docker, and system-design skills' }],
+  lookingFor: 'I am seeking Software Development, Backend Engineering, and Full Stack Developer opportunities where I can contribute to impactful products while growing as a software engineer.',
+  metrics: [{ value: '15+', label: 'Projects built' }, { value: '25+', label: 'Technologies used' }, { value: '1000+', label: 'GitHub contributions' }, { value: '2', label: 'Internships' }, { value: '9.1', label: 'CGPA' }, { value: '1+ yr', label: 'Development experience' }, { value: '20+', label: 'Deployments' }, { value: '5+', label: 'Certificates' }],
+} as const
