@@ -38,9 +38,41 @@ const External = ({ href, children }: { href: string, children: React.ReactNode 
   </a>
 )
 
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const staggerItem = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1],
+    },
+  },
+}
+
 export default function Home() {
   const p = d.profile
   const [activeProject, setActiveProject] = useState<typeof d.projects[number] | null>(null)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    const card = e.currentTarget
+    const rect = card.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    card.style.setProperty('--mouse-x', `${x}px`)
+    card.style.setProperty('--mouse-y', `${y}px`)
+  }
 
   useEffect(() => {
     if (activeProject) {
@@ -82,26 +114,38 @@ export default function Home() {
 
       <div id="top" className="shell">
         <section className="hero">
-          <Reveal>
-            <p className="eyebrow">Curriculum vitae / {p.location}</p>
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--ink)] via-[var(--accent)] to-[#06b6d4]">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-col"
+          >
+            <motion.p variants={staggerItem} className="eyebrow">
+              Curriculum vitae / {p.location}
+            </motion.p>
+            <motion.h1 
+              variants={staggerItem} 
+              className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--ink)] via-[var(--accent)] to-[#06b6d4] leading-tight"
+            >
               {p.name}
-            </h1>
-            <p className="hero-title">{p.title}</p>
-            <p className="hero-copy">
+            </motion.h1>
+            <motion.p variants={staggerItem} className="hero-title">
+              {p.title}
+            </motion.p>
+            <motion.p variants={staggerItem} className="hero-copy">
               Building clear, dependable digital products—from thoughtful interfaces to the systems that make them run.
-            </p>
-            <div className="hero-actions">
+            </motion.p>
+            <motion.div variants={staggerItem} className="hero-actions">
               <a className="button primary" href="/resume.pdf" download>
                 <DownloadIcon size={16} /> Download résumé
               </a>
               <a className="button secondary" href="#contact">
                 Contact me <span>→</span>
               </a>
-            </div>
-          </Reveal>
+            </motion.div>
+          </motion.div>
           
-          <Reveal className="hero-aside">
+          <Reveal className="hero-aside" delay={0.6}>
             <div className="profile-photo-container">
               <img src="/profile.png" alt={p.name} className="profile-photo" />
             </div>
@@ -139,8 +183,8 @@ export default function Home() {
 
           <Section id="experience" eyebrow="02 / Experience" title="Where I’ve contributed.">
             <div className="timeline">
-              {d.experience.map((job) => (
-                <Reveal key={job.role} className="timeline-item">
+              {d.experience.map((job, idx) => (
+                <Reveal key={job.role} className="timeline-item" delay={idx * 0.1}>
                   <div className="timeline-dot" />
                   <div className="timeline-date">
                     <CalendarIcon size={13} className="text-[var(--accent)]" />
@@ -176,8 +220,12 @@ export default function Home() {
           <Section id="projects" eyebrow="03 / Selected work" title="Projects worth a closer look.">
             <div className="project-grid">
               {d.projects.map((project, i) => (
-                <Reveal key={project.name}>
-                  <article className="project-card cursor-pointer" onClick={() => setActiveProject(project)}>
+                <Reveal key={project.name} delay={i * 0.08}>
+                  <article 
+                    className="project-card cursor-pointer" 
+                    onClick={() => setActiveProject(project)}
+                    onMouseMove={handleMouseMove}
+                  >
                     <div className={`project-image bg-gradient-to-br ${project.accent}`}>
                       {project.image ? (
                         <img 
@@ -228,16 +276,16 @@ export default function Home() {
           </Section>
 
           <Section id="skills" eyebrow="04 / Toolkit" title="Technologies I work with.">
-            <Reveal>
-              <div className="skills-grid">
-                {Object.entries(d.skills).map(([category, skills]) => (
-                  <div className="skill-group" key={category}>
+            <div className="skills-grid">
+              {Object.entries(d.skills).map(([category, skills], categoryIdx) => (
+                <Reveal key={category} delay={categoryIdx * 0.08}>
+                  <div className="skill-group" key={category} onMouseMove={handleMouseMove}>
                     <h3>{category}</h3>
                     <TagList tags={skills} />
                   </div>
-                ))}
-              </div>
-            </Reveal>
+                </Reveal>
+              ))}
+            </div>
           </Section>
 
           <section className="split-section">
